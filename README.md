@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# 📦 Github Lookup
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Repositório feito para o desafio técnico da empresa Tecnorise
 
-Currently, two official plugins are available:
+# 📌 Como rodar localmente
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para rodar o construir o projeto, o usuário deverá clonar este repositório utilizando o comando "git clone https://github.com/guilherme-dsveiga/github-lookup.git" caso tenha o git instalado na máquina, caso contrário, o download do .zip do repositório se encontra no mesmo link, clicando no botão "code" e logo após "Download ZIP".
 
-## Expanding the ESLint configuration
+Feito o clone do repositório, o usuário deverá primeiramente ter NodeJs instalado na sua máquina, caso não tenha, o mesmo pode ser obtido em: "https://nodejs.org/en/". Após a instalação, o usuário deve abrir o terminal no diretório onde se encontra o projeto e executar o comando "npm install".
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Após instalado as dependências do projeto, o usuário deve adicionar sua chave pessoal do github no lugar da existente, modificando o "VITE_GITHUB_KEY" dentro do arquivo .env
 
-- Configure the top-level `parserOptions` property like this:
+Feita a instalação das dependências e a alteração da chave, basta apenas executar o comando "npm run dev" no terminal, abrir o navegador e curtir!
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## 👨🏻‍💻 Tecnologias Utilizadas
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Foi utilizado primeiramente ReactJs com Redux para gerenciamento de estados, Redux-Saga para disparar "side effects" ao observar um disparo de ação e TailwindCSS para estilização dos componentes
+
+## 📩 Contato
+
+Linkedin: https://linkedin.com/in/guilherme-dsveiga
+Github: https://github.com/guilherme-dsveiga
+
+#### Desenvolvido com ❤️ por Guilherme Veiga
