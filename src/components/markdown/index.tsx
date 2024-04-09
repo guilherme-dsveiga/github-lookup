@@ -6,9 +6,10 @@ import rehypeRaw from "rehype-raw";
 
 type MarkdownProps = {
   content: string;
+  url: string;
 };
 
-function Markdown({ content }: MarkdownProps) {
+function Markdown({ content, url }: MarkdownProps) {
   return (
     <div className="text-sm text-stone-200 inline-block w-full">
       <ReactMarkdown
@@ -33,6 +34,13 @@ function Markdown({ content }: MarkdownProps) {
                 {children}
               </code>
             );
+          },
+          img({ src, ...props }: any) {
+            if (src.startsWith("/")) {
+              return <img src={`${url}${src}?raw=true`} {...props} />;
+            } else {
+              return <img src={src} {...props} />;
+            }
           },
         }}
       >

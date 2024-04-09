@@ -98,7 +98,10 @@ function RepositoryModal() {
                   <h3 className="font-semibold xs:text-base text-sm">README</h3>
                 </div>
                 <div className="mt-2 max-h-[35vh] rounded overflow-y-auto p-4 bg-stone-950">
-                  <Markdown content={markdownContent} />
+                  <Markdown
+                    url={`https://github.com/${activeRepository.owner.login}/${activeRepository.name}/blob/main`}
+                    content={markdownContent}
+                  />
                 </div>
               </div>
             ) : null}
