@@ -1,7 +1,6 @@
 import {
   GetRepositoriesPayload,
   GetRepositoriesResponse,
-  GetRepositoryInfoPayload,
   GetRepositoryInfoResponse,
 } from "../../../models/repositories";
 import { client } from "../../client";

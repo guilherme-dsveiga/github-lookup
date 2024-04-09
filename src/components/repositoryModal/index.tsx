@@ -2,11 +2,10 @@ import Modal from "../modal";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleModal } from "../../store/actions";
 import { RootState } from "../../store/reducers";
-import { useEffect, useMemo } from "react";
+import { useMemo } from "react";
 import Loading from "../loading";
 import {
   ClockCounterClockwise,
-  GitBranch,
   GitFork,
   GitPullRequest,
   Notepad,
@@ -19,17 +18,12 @@ import Tag from "../tag";
 function RepositoryModal() {
   const dispatch = useDispatch();
 
-  const {
-    isModalOpen,
-    activeRepository,
-    activeRepositoryLoading,
-    activeRepositoryError,
-  } = useSelector((state: RootState) => ({
-    isModalOpen: state.Modal.open,
-    activeRepository: state.Repositories.activeRepository,
-    activeRepositoryLoading: state.Repositories.activeRepositoryLoading,
-    activeRepositoryError: state.Repositories.activeRepositoryError,
-  }));
+  const { isModalOpen, activeRepository, activeRepositoryLoading } =
+    useSelector((state: RootState) => ({
+      isModalOpen: state.Modal.open,
+      activeRepository: state.Repositories.activeRepository,
+      activeRepositoryLoading: state.Repositories.activeRepositoryLoading,
+    }));
 
   const handleModalToggle = () => {
     dispatch(toggleModal());

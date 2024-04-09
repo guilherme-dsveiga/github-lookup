@@ -1,4 +1,3 @@
-import { X } from "@phosphor-icons/react";
 import { ReactNode, useEffect, useRef } from "react";
 
 type ModalProps = {
