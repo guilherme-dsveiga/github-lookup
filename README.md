@@ -2,6 +2,10 @@
 
 Repositório feito para o desafio técnico da empresa Tecnorise
 
+# 🌎 Link de acesso
+
+https://github-lookup-tecnorise.vercel.app
+
 # 📌 Como rodar localmente
 
 Para rodar o construir o projeto, o usuário deverá clonar este repositório utilizando o comando "git clone https://github.com/guilherme-dsveiga/github-lookup.git" caso tenha o git instalado na máquina, caso contrário, o download do .zip do repositório se encontra no mesmo link, clicando no botão "code" e logo após "Download ZIP".
