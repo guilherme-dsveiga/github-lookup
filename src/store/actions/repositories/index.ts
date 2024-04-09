@@ -5,8 +5,6 @@ import {
   GetRepositoryInfoAction,
   RepositoriesSuccess,
   RepositoriesError,
-  GetRepositoriesResponse,
-  GetRepositoryInfoResponse,
   Repository,
   RepositoryInfo,
 } from "../../../models/repositories";
